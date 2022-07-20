@@ -132,7 +132,9 @@ h4{
 span{
     margin-left: 10px;
 }
-
+a.more{
+    visibility: hidden;
+}
 
 /* footer style */
 
@@ -156,4 +158,70 @@ a.link{
     text-decoration: none;
     color: #B9B9B9;
     margin: 10px 10px 80px 10px;
+}
+
+
+/* style for tablet screen */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .header{
+        width: 734px;
+    }
+    #header-info{
+        width: 316px;
+        padding: 25px;
+    }
+    #main-body{
+        display: inline-block;
+    }
+    #nav{
+        display: flex;
+        height: auto;
+        width: 734px;
+        background-color: #FFFFFF;
+    
+    }
+    a.nav{
+        border: 1px solid #E8E8E8;
+    }
+    #blog{
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog{
+        margin: 20px auto 20px auto;
+    }
+    #more{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    a.more{
+        visibility: visible;
+        width: 131px;
+        height: 47px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20PX;
+        background-color: #DD0000;
+    }
+    
+}
+/* style for mobile screen */
+
+@media only screen and (max-width:688px) {
+    .header{
+        width: 334px;
+        height: 472px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr );
+    }
+    #header-info{
+        width: 258px;
+        height: 178px;
+        background-color: aqua;
+    }
+    h1{
+        font-size: 22px;
+    }
 }
