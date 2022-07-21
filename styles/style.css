@@ -9,6 +9,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -31,10 +33,12 @@ body{
 h1{
     color: white;
     font-size: 45px;
+    text-align: left;
     
 }
 p{
     color: white;
+    text-align: justify;
     
 }
 .live{
@@ -44,6 +48,7 @@ p{
     border-radius: 5px;
     color: white;
     font-size: 16px;
+    float: left;
 }
 #header-img{
     padding-top: 33px;
@@ -77,9 +82,10 @@ a.nav {
     display: block;
     text-decoration: none;
     font-size: 20PX;
+    border: 1px solid #E8E8E8;
     
 }
-.nav:hover{
+a.nav:hover{
     color: #FFFFFF;
     background-color: #d64242;
 }
@@ -179,10 +185,17 @@ a.link{
         height: auto;
         width: 734px;
         background-color: #FFFFFF;
+        justify-content: space-between;
     
     }
     a.nav{
-        border: 1px solid #E8E8E8;
+        width: 205px;
+        margin-left: 0px;
+        
+    }
+    a.nav-slc{
+        margin-left: 0px;
+        width: 205px;
     }
     #blog{
         width: auto;
@@ -213,15 +226,49 @@ a.link{
     .header{
         width: 334px;
         height: 472px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr );
+        display: flex;
+        flex-direction: column;
     }
     #header-info{
         width: 258px;
         height: 178px;
-        background-color: aqua;
+        padding: 30px;
+    
     }
     h1{
         font-size: 22px;
+    }
+    p{
+        height: 45px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .live{
+        width: 135px;
+        height: 35px;
+    }
+    #header-img{
+        justify-content: center;
+    }
+    .head-img{
+        height: 203px;
+    }
+    #main-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #nav{
+        background-color: white;
+    }
+    #blog{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    a.link {
+        display: block;
+        margin: 10px 0px 35px 0px;
     }
 }
