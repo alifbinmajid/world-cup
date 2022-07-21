@@ -285,6 +285,11 @@ a.footer-icon{
     .live{
         width: 135px;
         height: 35px;
+        transition: width 2s, height 2s, font-size 2s;
+    }
+    .live:hover{
+        width: 180px;
+        height: 40px;
     }
     #header-img{
         justify-content: center;
